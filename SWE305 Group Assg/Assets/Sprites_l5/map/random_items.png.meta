@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -2076,13 +2076,13 @@ TextureImporter:
       random_items_70: 761349023
       random_items_67: -910065297
       random_items_43: -63232434
-      random_items_68: 2114699769
+      random_items_72: 981577040
       random_items_82: 240908386
       random_items_17: 757644895
       random_items_25: 308031312
-      random_items_72: 981577040
-      random_items_33: 1343396067
       random_items_45: -1580762518
+      random_items_33: 1343396067
+      random_items_68: 2114699769
       random_items_66: 1077026153
       random_items_34: -984622165
       random_items_37: 759475326
