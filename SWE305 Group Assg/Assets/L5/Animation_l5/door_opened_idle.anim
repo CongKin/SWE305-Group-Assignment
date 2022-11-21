@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: door_idle
+  m_Name: door_opened_idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,9 +20,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -2083395613, guid: fb5078f7002087b4aa2c4ac882b7b161, type: 3}
+      value: {fileID: -449885705, guid: fb5078f7002087b4aa2c4ac882b7b161, type: 3}
     - time: 0.33333334
-      value: {fileID: 1215333841, guid: fb5078f7002087b4aa2c4ac882b7b161, type: 3}
+      value: {fileID: 1469335012, guid: fb5078f7002087b4aa2c4ac882b7b161, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -42,8 +42,8 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -2083395613, guid: fb5078f7002087b4aa2c4ac882b7b161, type: 3}
-    - {fileID: 1215333841, guid: fb5078f7002087b4aa2c4ac882b7b161, type: 3}
+    - {fileID: -449885705, guid: fb5078f7002087b4aa2c4ac882b7b161, type: 3}
+    - {fileID: 1469335012, guid: fb5078f7002087b4aa2c4ac882b7b161, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
