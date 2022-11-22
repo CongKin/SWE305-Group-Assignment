@@ -6,13 +6,12 @@ public class CharacterMovement : CharacterComponents
 {
     [SerializeField] private float walkSpeed = 6f;
 
+    // A property is a method to store / return a value. In this case, its to controls our current move speed
     public float MoveSpeed { get; set; }
 
-    private readonly int movingParamaterUp = Animator.StringToHash("MovingUp");
-    private readonly int movingParamaterDown = Animator.StringToHash("MovingDown");
-    private readonly int movingParamaterLeft = Animator.StringToHash("MovingLeft");
-    private readonly int movingParamaterRight = Animator.StringToHash("MovingRight");
-
+    // Internal
+    private readonly int movingParamater = Animator.StringToHash("Moving");
+    
     protected override void Start()
     {
         base.Start(); 
@@ -26,6 +25,7 @@ public class CharacterMovement : CharacterComponents
         UpdateAnimations();	       
     } 
 
+    // Moves our character by our current speed
     private void MoveCharacter()
     {
         Vector2 movement = new Vector2(x: horizontalInput, y: verticalInput);         
@@ -34,44 +34,28 @@ public class CharacterMovement : CharacterComponents
         controller.SetMovement(movementSpeed);
     }
 
+    // Updates our Idle and Move animation
     private void UpdateAnimations()
     {
-        if(horizontalInput > 0.1f)
-        {
+        if (Mathf.Abs(horizontalInput) > 0.1f || Mathf.Abs(verticalInput) > 0.1f)
+        {            
             if (character.CharacterAnimator != null)
             {
-                character.CharacterAnimator.SetBool(movingParamaterRight, true);
+                character.CharacterAnimator.SetFloat("Horizontal", movement.x);
+                character.CharacterAnimator.SetFloat("Vertical", movement.y);
+                character.CharacterAnimator.SetFloat("Speed", movement.sqrMagnitude);
             }
-        }else if(horizontalInput < 0.1f)
+        }
+        else
         {
             if (character.CharacterAnimator != null)
             {
-                character.CharacterAnimator.SetBool(movingParamaterLeft, true);
-            }
-        }else if(verticalInput > 0.1f)
-        {
-            if (character.CharacterAnimator != null)
-            {
-                character.CharacterAnimator.SetBool(movingParamaterUp, true);
-            }
-        }else if(verticalInput < 0.1f)
-        {
-            if (character.CharacterAnimator != null)
-            {
-                character.CharacterAnimator.SetBool(movingParamaterDown, true);character.CharacterAnimator.SetBool(movingParamaterUp, true);
-            }
-        }else
-        {
-            if (character.CharacterAnimator != null)
-            {
-                character.CharacterAnimator.SetBool(movingParamaterRight, false);
-                character.CharacterAnimator.SetBool(movingParamaterLeft, false);
-                character.CharacterAnimator.SetBool(movingParamaterUp, false);
-                character.CharacterAnimator.SetBool(movingParamaterDown, false);
+                character.CharacterAnimator.SetBool(movingParamater, false);
             }
         }
     }
 
+    // Resets our speed from the run speed to the walk speed
     public void ResetSpeed()
     {
         MoveSpeed = walkSpeed;
