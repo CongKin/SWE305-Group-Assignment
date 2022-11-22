@@ -10,6 +10,7 @@ public class AIDetector : MonoBehaviour
     public Transform Player { get; private set; }
 
     [SerializeField] private string detectionTag = "Player";
+    public UnityEvent enterEvent, exitEvent;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -18,6 +19,7 @@ public class AIDetector : MonoBehaviour
             isInArea = true;
             Debug.Log("Player detected");
             Player = collision.gameObject.transform;
+            enterEvent.Invoke();
         }
     }
 
@@ -28,6 +30,7 @@ public class AIDetector : MonoBehaviour
             isInArea = false;
             Debug.Log("Player out of range");
             Player = null;
+            exitEvent.Invoke();
         }
     }
 }

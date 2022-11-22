@@ -207,6 +207,7 @@ MonoBehaviour:
   isInRange: 0
   isOpen: 0
   interactKey: 101
+  interactKey2: 104
   openDoor:
     m_PersistentCalls:
       m_Calls:
