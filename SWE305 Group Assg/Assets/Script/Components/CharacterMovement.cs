@@ -8,10 +8,9 @@ public class CharacterMovement : CharacterComponents
 
     // A property is a method to store / return a value. In this case, its to controls our current move speed
     public float MoveSpeed { get; set; }
-
-    // Internal
-    private readonly int movingParamater = Animator.StringToHash("Moving");
     
+    Vector2 movementSpeed;
+
     protected override void Start()
     {
         base.Start(); 
@@ -25,37 +24,21 @@ public class CharacterMovement : CharacterComponents
         UpdateAnimations();	       
     } 
 
-    // Moves our character by our current speed
     private void MoveCharacter()
     {
         Vector2 movement = new Vector2(x: horizontalInput, y: verticalInput);         
         Vector2 movementNormalized = movement.normalized;   
-        Vector2 movementSpeed = movementNormalized * MoveSpeed;
+        movementSpeed = movementNormalized * MoveSpeed;
         controller.SetMovement(movementSpeed);
     }
 
-    // Updates our Idle and Move animation
     private void UpdateAnimations()
     {
-        if (Mathf.Abs(horizontalInput) > 0.1f || Mathf.Abs(verticalInput) > 0.1f)
-        {            
-            if (character.CharacterAnimator != null)
-            {
-                character.CharacterAnimator.SetFloat("Horizontal", movement.x);
-                character.CharacterAnimator.SetFloat("Vertical", movement.y);
-                character.CharacterAnimator.SetFloat("Speed", movement.sqrMagnitude);
-            }
-        }
-        else
-        {
-            if (character.CharacterAnimator != null)
-            {
-                character.CharacterAnimator.SetBool(movingParamater, false);
-            }
-        }
+        character.CharacterAnimator.SetFloat("Horizontal", horizontalInput);
+        character.CharacterAnimator.SetFloat("Vertical", verticalInput);
+        character.CharacterAnimator.SetFloat("Speed", movementSpeed.sqrMagnitude);
     }
 
-    // Resets our speed from the run speed to the walk speed
     public void ResetSpeed()
     {
         MoveSpeed = walkSpeed;
