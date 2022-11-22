@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] float health, maxHealth = 3f;
-    public Events OnPlayerDefeated;
+    public UnityEvent OnPlayerDefeated;
 
     void Start()
     {
