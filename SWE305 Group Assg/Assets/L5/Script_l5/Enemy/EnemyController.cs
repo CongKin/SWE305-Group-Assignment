@@ -6,8 +6,10 @@ using UnityEngine.Events;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] float health, maxHealth = 3f;
-    public UnityEvent OnEnemyKilled;
     public KeyCode key;
+    public UnityEvent onEnemyKilled;
+    float Timer = 2;
+    bool canBeDefeated = false;
 
     void Start () {
         EnemyManager.Register(gameObject.GetInstanceID(), this);
@@ -25,14 +27,14 @@ public class EnemyController : MonoBehaviour
 
     public void TakeDamage(float damageAmount)
     {
+        onEnemyKilled?.Invoke();
         Debug.Log("Damage Taken");
         health -= damageAmount;
 
-        if(health <= 0)
+        if (health <= 0)
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 2);
             EnemyManager.HandleEnemyDefeated(gameObject.GetInstanceID(), this);
         }
-        
     }
 }

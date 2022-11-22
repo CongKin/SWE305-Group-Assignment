@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,7 +125,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,7 +146,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -167,7 +167,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,7 +188,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,7 +209,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,7 +230,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,7 +251,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,7 +272,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -293,7 +293,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -314,7 +314,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -335,7 +335,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -356,7 +356,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -377,7 +377,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -398,7 +398,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -419,7 +419,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -440,7 +440,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -453,15 +453,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guard_orange_spritesheet_16
+      name: defeat_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 32
-        width: 16
-        height: 16
+        width: 14
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -474,15 +474,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guard_orange_spritesheet_17
+      name: defeat_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 18
         y: 32
-        width: 16
+        width: 12
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -495,15 +495,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guard_orange_spritesheet_18
+      name: defeat_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 32
-        width: 16
+        width: 12
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -516,15 +516,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guard_orange_spritesheet_19
+      name: defeat_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 49
         y: 32
-        width: 16
-        height: 16
+        width: 14
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -537,15 +537,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guard_orange_spritesheet_20
+      name: defeat_4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 16
-        width: 16
+        width: 12
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -558,15 +558,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guard_orange_spritesheet_21
+      name: defeat_5
       rect:
         serializedVersion: 2
-        x: 16
+        x: 18
         y: 16
-        width: 16
+        width: 12
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -579,15 +579,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guard_orange_spritesheet_22
+      name: defeat_6
       rect:
         serializedVersion: 2
-        x: 32
+        x: 33
         y: 16
-        width: 16
+        width: 14
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -600,15 +600,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guard_orange_spritesheet_23
+      name: defeat_7
       rect:
         serializedVersion: 2
-        x: 48
+        x: 49
         y: 16
-        width: 16
+        width: 13
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -621,15 +621,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guard_orange_spritesheet_24
+      name: defeat_8
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 16
+        width: 13
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -642,15 +642,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guard_orange_spritesheet_25
+      name: defeat_9
       rect:
         serializedVersion: 2
-        x: 16
+        x: 17
         y: 0
-        width: 16
-        height: 16
+        width: 14
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -663,15 +663,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guard_orange_spritesheet_26
+      name: defeat_10
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 0
-        width: 16
+        width: 13
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -684,15 +684,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guard_orange_spritesheet_27
+      name: defeat_11
       rect:
         serializedVersion: 2
-        x: 48
+        x: 50
         y: 0
-        width: 16
+        width: 13
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -715,33 +715,33 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      defeat_9: 1178326470
       guard_orange_spritesheet_12: -928096268
-      guard_orange_spritesheet_26: -1406571556
+      defeat_1: 353193365
+      defeat_7: -901702725
       guard_orange_spritesheet_4: 96950664
-      guard_orange_spritesheet_17: 353193365
+      defeat_5: -1642042754
       guard_orange_spritesheet_13: -52013758
       guard_orange_spritesheet_5: 2144677639
-      guard_orange_spritesheet_19: 1034099930
-      guard_orange_spritesheet_20: -1892390562
-      guard_orange_spritesheet_21: -1642042754
-      guard_orange_spritesheet_24: 2097415056
       guard_orange_spritesheet_0: 999970268
-      guard_orange_spritesheet_16: -7514022
-      guard_orange_spritesheet_18: 1671420594
-      guard_orange_spritesheet_22: -1673159264
       guard_orange_spritesheet_10: 472789974
-      guard_orange_spritesheet_25: 1178326470
       guard_orange_spritesheet_11: 886830676
       guard_orange_spritesheet_8: -1356396341
       guard_orange_spritesheet_6: 1862294477
       guard_orange_spritesheet_7: 1352161454
       guard_orange_spritesheet_1: -1623378443
       guard_orange_spritesheet_14: 945380920
-      guard_orange_spritesheet_27: -1378354119
-      guard_orange_spritesheet_23: -901702725
+      defeat_3: 1034099930
+      defeat_10: -1406571556
+      defeat_11: -1378354119
       guard_orange_spritesheet_3: -1019005010
+      defeat_6: -1673159264
       guard_orange_spritesheet_9: -1635955902
+      defeat_0: -7514022
+      defeat_2: 1671420594
+      defeat_8: 2097415056
       guard_orange_spritesheet_2: -1304149069
+      defeat_4: -1892390562
       guard_orange_spritesheet_15: 1860481074
   spritePackingTag: 
   pSDRemoveMatte: 0

@@ -1,27 +1,28 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-
-public class Enemy : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
-    public static event Action<Enemy> OnEnemyKilled;
     [SerializeField] float health, maxHealth = 3f;
+    public Events OnPlayerDefeated;
 
-    private void Start()
+    void Start()
     {
         health = maxHealth;
     }
 
     public void TakeDamage(float damageAmount)
     {
+        Debug.Log("Player Damage Taken");
         health -= damageAmount;
 
         if(health <= 0)
         {
-            Destroy(gameObject);
-            OnEnemyKilled?.Invoke(this);
+            OnPlayerDefeated?.Invoke();
+            Destroy(gameObject, 5);
         }
+        
     }
 }
