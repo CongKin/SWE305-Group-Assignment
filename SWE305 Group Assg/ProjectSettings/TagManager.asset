@@ -53,3 +53,6 @@ TagManager:
   - name: player
     uniqueID: 2863183637
     locked: 0
+  - name: Door
+    uniqueID: 13311161
+    locked: 0
