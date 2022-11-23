@@ -17,11 +17,6 @@ public class CharacterMovement : CharacterComponents
         MoveSpeed = walkSpeed;		       
     } 
 
-    protected void Update()
-    {
-        MoveCharacter();
-        UpdateAnimations();
-    }
     protected override void HandleAbility()
     {
         base.HandleAbility();
