@@ -4,26 +4,48 @@ using UnityEngine;
 
 public class CharacterMovement : CharacterComponents
 {
+    [SerializeField] private float walkSpeed = 6f;
 
-    public float moveSpeed = 5f;
-    public Rigidbody2D rb;
-    //public Animator animator;
-
-    Vector2 movement;
+    // A property is a method to store / return a value. In this case, its to controls our current move speed
+    public float MoveSpeed { get; set; }
     
-    void Update() 
-    {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+    Vector2 movementSpeed;
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+    protected override void Start()
+    {
+        base.Start(); 
+        MoveSpeed = walkSpeed;		       
+    } 
+
+    protected void Update()
+    {
+        MoveCharacter();
+        UpdateAnimations();
+    }
+    protected override void HandleAbility()
+    {
+        base.HandleAbility();
+        MoveCharacter(); 
+        UpdateAnimations();	       
+    } 
+
+    private void MoveCharacter()
+    {
+        Vector2 movement = new Vector2(x: horizontalInput, y: verticalInput);         
+        Vector2 movementNormalized = movement.normalized;   
+        movementSpeed = movementNormalized * MoveSpeed;
+        controller.SetMovement(movementSpeed);
     }
 
-    void FixedUpdate()
+    private void UpdateAnimations()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        character.CharacterAnimator.SetFloat("Horizontal", horizontalInput);
+        character.CharacterAnimator.SetFloat("Vertical", verticalInput);
+        character.CharacterAnimator.SetFloat("Speed", movementSpeed.sqrMagnitude);
     }
 
+    public void ResetSpeed()
+    {
+        MoveSpeed = walkSpeed;
+    }
 }
