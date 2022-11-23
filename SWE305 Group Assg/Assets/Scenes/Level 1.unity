@@ -610,7 +610,7 @@ GameObject:
   - component: {fileID: 599574238}
   - component: {fileID: 599574237}
   m_Layer: 0
-  m_Name: planetsPack1byGM_Shaber_9
+  m_Name: Planet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -689,7 +689,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599574236}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 77.02, y: -4.16, z: 0}
+  m_LocalPosition: {x: 62.1, y: -4.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1525,7 +1525,7 @@ GameObject:
   - component: {fileID: 2065119211}
   - component: {fileID: 2065119210}
   m_Layer: 0
-  m_Name: wallpapersden.com_artistic-pixel-art-hd-space_1920x1080
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1591,8 +1591,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065119209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 0.01, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.014, y: -0.0014, z: 0}
+  m_LocalScale: {x: 0.9287712, y: 0.9261174, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
