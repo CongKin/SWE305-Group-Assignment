@@ -777,9 +777,9 @@ GameObject:
   - component: {fileID: 1128383425}
   - component: {fileID: 1128383424}
   - component: {fileID: 1128383427}
+  - component: {fileID: 1128383433}
   - component: {fileID: 1128383426}
   - component: {fileID: 1128383429}
-  - component: {fileID: 1128383428}
   - component: {fileID: 1128383430}
   - component: {fileID: 1128383431}
   - component: {fileID: 1128383432}
@@ -964,18 +964,6 @@ MonoBehaviour:
   characterType: 0
   characterSprite: {fileID: 1128383410}
   characterAnimator: {fileID: 1128383424}
---- !u!114 &1128383428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128383410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b2f53e3e266fdf49bbf1afbc0e21b48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1128383429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,6 +1021,18 @@ MonoBehaviour:
   initialShield: 5
   maxShield: 5
   destroyObject: 0
+--- !u!114 &1128383433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128383410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b2f53e3e266fdf49bbf1afbc0e21b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1167632738
 GameObject:
   m_ObjectHideFlags: 0
