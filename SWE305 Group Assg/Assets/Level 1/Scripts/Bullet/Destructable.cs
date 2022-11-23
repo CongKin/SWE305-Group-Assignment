@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Destructable : MonoBehaviour
 {
-bool canBeDestroyed = false;
+    public UnityEvent onDeath;
+
+    bool canBeDestroyed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +33,7 @@ bool canBeDestroyed = false;
         Bullet bullet = collision.GetComponent<Bullet>();
         if (bullet != null)
         {
+            onDeath.Invoke();
             Destroy(gameObject);
             Destroy(bullet.gameObject);
         }
