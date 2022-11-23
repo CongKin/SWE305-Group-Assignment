@@ -1,0 +1,751 @@
+fileFormatVersion: 2
+guid: 7e7488262b4d3b44184bf0a424c7c94c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3144
+        width: 960
+        height: 960
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e170501bec0524688b6a36ac350a2a
+      internalID: -203122587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_1
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 3144
+        width: 1925
+        height: 960
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30e68bb310751b44a75e000dd35825f
+      internalID: -960834199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_2
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 3144
+        width: 964
+        height: 960
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7e5e0697a34564083f35fda55d269d
+      internalID: 164574365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_3
+      rect:
+        serializedVersion: 2
+        x: 3985
+        y: 3144
+        width: 964
+        height: 960
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190fc3d9393722b4d858c01388a95b60
+      internalID: -1500747209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_4
+      rect:
+        serializedVersion: 2
+        x: 4990
+        y: 3144
+        width: 968
+        height: 960
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85bb37f41dec01843b3fd6f09f596d1a
+      internalID: 831503511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_5
+      rect:
+        serializedVersion: 2
+        x: 5975
+        y: 3144
+        width: 963
+        height: 960
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f52e6dbb0aced2429f12cbe7bef4fa8
+      internalID: 1398354096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2136
+        width: 943
+        height: 957
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5daea894548b7ac4bb111758e5b2e9e4
+      internalID: -2011555475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_7
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 2279
+        width: 810
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf73b43128c5a6b42b8d5d38d097fa64
+      internalID: -901843079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_8
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 2129
+        width: 964
+        height: 964
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619e73d6e854bdf45a892b61d342ee74
+      internalID: -701489972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_9
+      rect:
+        serializedVersion: 2
+        x: 2980
+        y: 2129
+        width: 964
+        height: 964
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45013271c9a1314fad1fc64d38f6240
+      internalID: -1394851415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_10
+      rect:
+        serializedVersion: 2
+        x: 3979
+        y: 2129
+        width: 963
+        height: 964
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e2b84b207e97043900709c6831ca30
+      internalID: -1253583300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_11
+      rect:
+        serializedVersion: 2
+        x: 4977
+        y: 2129
+        width: 963
+        height: 964
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4373e2b802999674fac2ac04cf783319
+      internalID: -925373405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_12
+      rect:
+        serializedVersion: 2
+        x: 5975
+        y: 2129
+        width: 963
+        height: 964
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61e1018f9b84be48855cab0b8eb67d8
+      internalID: -752061112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1121
+        width: 950
+        height: 963
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c34a2ba168245d41b6874f2327dd39b
+      internalID: 1749949834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_14
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1124
+        width: 961
+        height: 960
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25204e7ef81d14d42b8ca38eec3c2384
+      internalID: -1985847175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_15
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 1121
+        width: 964
+        height: 963
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359a563686cb994498e02f8246d2b386
+      internalID: 1189398262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_16
+      rect:
+        serializedVersion: 2
+        x: 2977
+        y: 1121
+        width: 964
+        height: 963
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dac3e4dfd3472c40958f7c6c156fd3b
+      internalID: -678164373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_17
+      rect:
+        serializedVersion: 2
+        x: 3972
+        y: 1121
+        width: 964
+        height: 963
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae3ed1a545d95740973a95c37e8bac8
+      internalID: 1305214987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_18
+      rect:
+        serializedVersion: 2
+        x: 4966
+        y: 1121
+        width: 964
+        height: 963
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37fc3a3184053340a3052179e5d026a
+      internalID: -65425674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_19
+      rect:
+        serializedVersion: 2
+        x: 5961
+        y: 1121
+        width: 964
+        height: 963
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5edb61e9693464aa3e9e231d14e7c0
+      internalID: -1447154970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_20
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 120
+        width: 954
+        height: 946
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b119c6e4db74c004f8012efac32055d7
+      internalID: 910269261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_21
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 103
+        width: 964
+        height: 963
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea57c0052ea70a45ac5b803bff98459
+      internalID: -1020478402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_22
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 796
+        width: 78
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1829427a08fd4494aa3dece8faa5b88e
+      internalID: 1729015304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_23
+      rect:
+        serializedVersion: 2
+        x: 2519
+        y: 236
+        width: 800
+        height: 827
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76639b64e3de18d45b43633afd1d7ad0
+      internalID: 1083026875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_24
+      rect:
+        serializedVersion: 2
+        x: 3579
+        y: 103
+        width: 963
+        height: 963
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af81af0ce5c1a734d9118101fe3f6529
+      internalID: -1510160254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_25
+      rect:
+        serializedVersion: 2
+        x: 4768
+        y: 109
+        width: 950
+        height: 954
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8405c7105e1e34cabd2bb8eb250db6
+      internalID: -1517024908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_26
+      rect:
+        serializedVersion: 2
+        x: 6084
+        y: 137
+        width: 793
+        height: 926
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b3a2200dea7ca45adab185ddc63f6e
+      internalID: 220004060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planetsPack1byGM_Shaber_27
+      rect:
+        serializedVersion: 2
+        x: 5971
+        y: 284
+        width: 65
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b164db263dc3149a42796c22e7b435
+      internalID: 282568056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      planetsPack1byGM_Shaber_10: -1253583300
+      planetsPack1byGM_Shaber_22: 1729015304
+      planetsPack1byGM_Shaber_21: -1020478402
+      planetsPack1byGM_Shaber_2: 164574365
+      planetsPack1byGM_Shaber_1: -960834199
+      planetsPack1byGM_Shaber_20: 910269261
+      planetsPack1byGM_Shaber_11: -925373405
+      planetsPack1byGM_Shaber_25: -1517024908
+      planetsPack1byGM_Shaber_18: -65425674
+      planetsPack1byGM_Shaber_26: 220004060
+      planetsPack1byGM_Shaber_15: 1189398262
+      planetsPack1byGM_Shaber_9: -1394851415
+      planetsPack1byGM_Shaber_4: 831503511
+      planetsPack1byGM_Shaber_3: -1500747209
+      planetsPack1byGM_Shaber_5: 1398354096
+      planetsPack1byGM_Shaber_6: -2011555475
+      planetsPack1byGM_Shaber_17: 1305214987
+      planetsPack1byGM_Shaber_24: -1510160254
+      planetsPack1byGM_Shaber_19: -1447154970
+      planetsPack1byGM_Shaber_16: -678164373
+      planetsPack1byGM_Shaber_12: -752061112
+      planetsPack1byGM_Shaber_0: -203122587
+      planetsPack1byGM_Shaber_13: 1749949834
+      planetsPack1byGM_Shaber_14: -1985847175
+      planetsPack1byGM_Shaber_23: 1083026875
+      planetsPack1byGM_Shaber_27: 282568056
+      planetsPack1byGM_Shaber_8: -701489972
+      planetsPack1byGM_Shaber_7: -901843079
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
