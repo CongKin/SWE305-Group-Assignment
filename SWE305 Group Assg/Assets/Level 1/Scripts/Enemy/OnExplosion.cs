@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-
-public class Destructable : MonoBehaviour
+public class OnExplosion : MonoBehaviour
 {
+    public UnityEvent onDeath;
+
     bool canBeDestroyed = false;
 
     // Start is called before the first frame update
@@ -16,10 +18,7 @@ public class Destructable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x < 8f)
-        {
-            canBeDestroyed = true;
-        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,8 +30,8 @@ public class Destructable : MonoBehaviour
         Bullet bullet = collision.GetComponent<Bullet>();
         if (bullet != null)
         {
-            Destroy(gameObject);
-            Destroy(bullet.gameObject);
+            onDeath.Invoke();
         }
     }
 }
+
