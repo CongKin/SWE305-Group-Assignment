@@ -14,6 +14,7 @@ public class Interact : MonoBehaviour
     public KeyCode interactKey2;
     public UnityEvent openDoor;
     public UnityEvent closeDoor;
+    public GameObject tips;
 
     // Start is called before the first frame update
     void Start()
@@ -32,9 +33,13 @@ public class Interact : MonoBehaviour
                 isOpen = true;
                 sceneToLoad = "EndScreen";
             }
-            if (isOpen && enterAllowed && Input.GetKeyDown(interactKey2))
+
+            if (isOpen && Input.GetKeyDown(interactKey2))
             {   
-                SceneManager.LoadScene(sceneToLoad);
+                if (enterAllowed)
+                    SceneManager.LoadScene(sceneToLoad);
+                else
+                    tips.SetActive(true);
             }
         }
         else

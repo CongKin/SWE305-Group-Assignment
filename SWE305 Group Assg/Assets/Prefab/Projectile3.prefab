@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7790404023953151015}
   m_Layer: 0
   m_Name: Projectile3
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,6 +149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 100
   acceleration: 0
+  damage: 1
+  enemyHealth: {fileID: 3732315000396148212, guid: f8baef2218916f84a9bba649f7bc705b, type: 3}
 --- !u!114 &7790404023953151015
 MonoBehaviour:
   m_ObjectHideFlags: 0

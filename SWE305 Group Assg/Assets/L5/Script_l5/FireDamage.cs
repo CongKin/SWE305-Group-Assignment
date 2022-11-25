@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class FireDamage : MonoBehaviour
 {
     [SerializeField] float damage = 1f;
-    public PlayerHealth playerHealth;
+    public Health playerHealth;
     public EnemyController enemyHealth;
     bool canTakeDamage = true;
 

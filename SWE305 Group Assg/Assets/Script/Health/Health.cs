@@ -50,7 +50,7 @@ public class Health : MonoBehaviour
     }
 
     // Take the amount of damage we pass in parameters
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         if (CurrentHealth <= 0)
         {

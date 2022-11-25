@@ -6,7 +6,9 @@ using UnityEngine.Events;
 public class EnemyDamage : MonoBehaviour
 {
     [SerializeField] float damage = 1f;
-    public PlayerHealth playerHealth;
+    [SerializeField] float playerDamage = 1f;
+    public Health playerHealth;
+    public EnemyController enemyHealth;
     bool canTakeDamage = true; 
     private Animator animator;
 
@@ -21,17 +23,23 @@ public class EnemyDamage : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             animator.Play("Base Layer.enemy_attack", 0, 1f);
+            StartCoroutine (WaitForSeconds());
             playerHealth.TakeDamage(damage);
-            //StartCoroutine (WaitForSeconds());
+        }
+
+        if(collision.gameObject.tag == "Bullet")
+        {
+            enemyHealth.TakeDamage(damage);
         }
 
     }
+
     
     IEnumerator WaitForSeconds()
     {
         Debug.Log("waited");
         canTakeDamage = false;
-        yield return new WaitForSecondsRealtime (3);
+        yield return new WaitForSecondsRealtime (2);
         canTakeDamage = true;
     }
 
