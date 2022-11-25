@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Bullet
+  - Bullet1
+  - Bullet2
+  - Bullet3
   layers:
   - Default
   - TransparentFX
@@ -48,6 +51,9 @@ TagManager:
     locked: 0
   - name: wall
     uniqueID: 2196475601
+    locked: 0
+  - name: Level Component
+    uniqueID: 84507389
     locked: 0
   - name: top
     uniqueID: 1866039221
