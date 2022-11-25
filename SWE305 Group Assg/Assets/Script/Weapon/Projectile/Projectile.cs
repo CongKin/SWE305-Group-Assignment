@@ -46,7 +46,7 @@ public class Projectile : MonoBehaviour
         movement = Direction * (Speed / 10f ) * Time.fixedDeltaTime;
         myRigidbody2D.MovePosition(myRigidbody2D.position + movement);
 
-        Speed += acceleration * Time.DeltaTime;
+        Speed += acceleration * Time.deltaTime;
     }
    
     // Flips this projectile   
