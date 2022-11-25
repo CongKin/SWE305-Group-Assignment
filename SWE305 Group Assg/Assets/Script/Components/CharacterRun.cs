@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterRun : CharacterComponents    
+public class CharacterRun : CharacterComponents  
 {
     [SerializeField] private float runSpeed = 10f;
     
