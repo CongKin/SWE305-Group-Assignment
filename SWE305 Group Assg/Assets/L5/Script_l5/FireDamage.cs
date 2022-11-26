@@ -9,6 +9,7 @@ public class FireDamage : MonoBehaviour
     public Health playerHealth;
     public EnemyController enemyHealth;
     bool canTakeDamage = true;
+    public List<int> burnTickTimers = new List<int>();
 
     void Start()
     {
@@ -21,21 +22,12 @@ public class FireDamage : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             playerHealth.TakeDamage(damage);
-            //StartCoroutine (WaitForSeconds());
         }
         if(collision.gameObject.tag == "Enemy")
         {
             enemyHealth.TakeDamage(damage);
         }
 
-    }
-    
-    IEnumerator WaitForSeconds()
-    {
-        Debug.Log("waited");
-        canTakeDamage = false;
-        yield return new WaitForSecondsRealtime (3);
-        canTakeDamage = true;
     }
 
 }
