@@ -11,6 +11,7 @@ public class CharacterController : MonoBehaviour
 
     // Returns if this character can move normally (When dashing we can't)
     public bool NormalMovement {get; set;}
+    public static CharacterController Instance;
 
     // Internal
     private Rigidbody2D myRigidbody2D;
@@ -21,6 +22,14 @@ public class CharacterController : MonoBehaviour
     {
         NormalMovement = true;
         myRigidbody2D = GetComponent<Rigidbody2D>();
+
+        if (Instance != null)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+
+        GameObject.DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
