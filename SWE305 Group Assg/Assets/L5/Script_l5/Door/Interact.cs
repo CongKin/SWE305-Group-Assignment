@@ -57,6 +57,7 @@ public class Interact : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
+            int key = collision.gameObject.GetComponent<ItemCollector>().getKeyCount();
             isInRange = true;
             Debug.Log("Player now in range");
             if (EnemyManager.getEnemyCount() <= 0)

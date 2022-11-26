@@ -5,9 +5,7 @@ using UnityEngine.UI;
 
 public class ItemCollector : MonoBehaviour
 {
-    public static int keys = 0;
-
-    [SerializeField] private Text keysText;
+    public static int keys = 3;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,7 +14,12 @@ public class ItemCollector : MonoBehaviour
             
             Destroy(collision.gameObject);
             keys++;
-            keysText.text = "Keys: " + keys + "/3";
+            UIManager.Instance.UpdateKey(keys);
         }
+    }
+
+    public int getKeyCount()
+    {
+        return keys;
     }
 }
