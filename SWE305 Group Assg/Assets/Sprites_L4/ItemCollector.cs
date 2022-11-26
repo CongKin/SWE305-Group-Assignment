@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ItemCollector : MonoBehaviour
 {
-    private int keys = 0;
+    public static int keys = 0;
 
     [SerializeField] private Text keysText;
 
