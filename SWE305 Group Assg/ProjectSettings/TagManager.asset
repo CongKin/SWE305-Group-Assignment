@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Portal
+  - Bullet1
+  - Enemy
+  - Key
+  - Bullet3
+  - Bullet2
   layers:
   - Default
   - TransparentFX
@@ -13,8 +19,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Wall
+  - Level Components
   - 
   - 
   - 
@@ -40,4 +46,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Map
+    uniqueID: 1561431989
+    locked: 0
+  - name: Level Components
+    uniqueID: 1727283833
+    locked: 0
+  - name: Collectables
+    uniqueID: 3559468009
+    locked: 0
+  - name: Player
+    uniqueID: 2938978359
+    locked: 0
+  - name: Projectile
+    uniqueID: 496529723
+    locked: 0
+  - name: Weapon
+    uniqueID: 3384855571
+    locked: 0
+  - name: Top
+    uniqueID: 2702095379
     locked: 0
