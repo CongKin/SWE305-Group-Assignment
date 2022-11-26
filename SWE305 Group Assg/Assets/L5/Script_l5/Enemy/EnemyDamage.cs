@@ -49,6 +49,8 @@ public class EnemyDamage : MonoBehaviour
             resetProjectile.Return();
         }
     }
+
+    
     
     IEnumerator WaitForSeconds()
     {
