@@ -14,6 +14,8 @@ TagManager:
   - Enemy
   - Bullet3
   - Bullet2
+  - Weapon
+  - Spawn
   layers:
   - Default
   - TransparentFX
@@ -23,8 +25,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Wall
+  - Level Component
   - 
   - 
   - 
@@ -51,12 +53,30 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Map
+  - name: Floor
     uniqueID: 3701713929
     locked: 0
-  - name: Top
-    uniqueID: 2967518547
+  - name: Wall
+    uniqueID: 3413128029
+    locked: 0
+  - name: Level Component
+    uniqueID: 420214989
+    locked: 0
+  - name: Collectable
+    uniqueID: 2299658381
     locked: 0
   - name: Player
     uniqueID: 639101127
+    locked: 0
+  - name: Weapon
+    uniqueID: 2467404109
+    locked: 0
+  - name: Projectile
+    uniqueID: 750174689
+    locked: 0
+  - name: Reticle
+    uniqueID: 911104025
+    locked: 0
+  - name: Top
+    uniqueID: 2967518547
     locked: 0
