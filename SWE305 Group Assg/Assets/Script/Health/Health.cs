@@ -32,6 +32,7 @@ public class Health : MonoBehaviour
 
     // Returns the current health of this character
     public float CurrentShield { get; set; }
+    private GameObject gameObject;
     
     private void Awake()
     {
@@ -54,10 +55,7 @@ public class Health : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            TakeDamage(1);
-        }
+    
     }
 
     // Take the amount of damage we pass in parameters
@@ -150,5 +148,6 @@ public class Health : MonoBehaviour
     private void DestroyObject()
     {
         gameObject.SetActive(false);
+
     }    
 }
