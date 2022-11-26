@@ -30,6 +30,12 @@ public class UIManager : Singleton<UIManager>
     private int playerCurrentAmmo;
     private int playerMaxAmmo;
 
+    private void Start()
+    {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Health>().UpdateCharacterHealth();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterWeapon>().UpdateWeapon();
+    }
+
     private void Update()
     {
         InternalUpdate();

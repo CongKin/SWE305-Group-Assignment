@@ -32,7 +32,7 @@ public class Health : MonoBehaviour
     // Returns the current health of this character
     public float CurrentShield { get; set; }
     
-    private void Awake()
+    public void Awake()
     {
         character = GetComponent<Character>();
         controller = GetComponent<CharacterController>();
@@ -173,7 +173,7 @@ public class Health : MonoBehaviour
 
     }    
 
-    private void UpdateCharacterHealth()
+    public void UpdateCharacterHealth()
  {
  // Update Player health
  if (character != null)
