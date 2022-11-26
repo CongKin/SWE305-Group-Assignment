@@ -36,7 +36,9 @@ public class Interact : MonoBehaviour
             if (isOpen && Input.GetKeyDown(interactKey2))
             {   
                 if (enterAllowed)
+                {
                     SceneManager.LoadScene(sceneToLoad);
+                }
                 else
                     tips.SetActive(true);
             }

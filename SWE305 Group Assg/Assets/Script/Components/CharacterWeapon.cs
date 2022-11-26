@@ -91,7 +91,9 @@ public class CharacterWeapon : CharacterComponents
             Destroy(CurrentWeapon.gameObject);
         }
 
-        CurrentWeapon = Instantiate(weapon, weaponHolderPosition.position, weaponHolderPosition.rotation);
+        weaponToUse = weapon;
+
+        CurrentWeapon = Instantiate(weaponToUse, weaponHolderPosition.position, weaponHolderPosition.rotation);
         CurrentWeapon.transform.parent = weaponHolderPosition;
         CurrentWeapon.SetOwner(character);     
         WeaponAim = CurrentWeapon.GetComponent<WeaponAim>(); 

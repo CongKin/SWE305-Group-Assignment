@@ -20,7 +20,6 @@ public class Health : MonoBehaviour
     private CharacterController controller;
     private Collider2D collider2D;
     private SpriteRenderer spriteRenderer;
-    private CharacterWeapon characterWeapon;
 
     private bool isPlayer;
     private bool shieldBroken;
@@ -32,7 +31,6 @@ public class Health : MonoBehaviour
 
     // Returns the current health of this character
     public float CurrentShield { get; set; }
-    private GameObject gameObject;
     
     private void Awake()
     {
@@ -113,8 +111,6 @@ public class Health : MonoBehaviour
 
             character.enabled = false;
             controller.enabled = false;
-
-            //characterWeapon.enabled = false;
         }
 
         if (destroyObject)
@@ -157,8 +153,6 @@ public class Health : MonoBehaviour
 
             character.enabled = true;
             controller.enabled = true;
-
-            //characterWeapon.enabled = true;
         }
 
         gameObject.SetActive(true);

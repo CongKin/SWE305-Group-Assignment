@@ -25,7 +25,7 @@ public class WeaponAim : MonoBehaviour
     private Quaternion initialRotation;
     private Quaternion lookRotation;
 
-    private void Start()
+    public void Start()
     {
         Cursor.visible = false; 
         weapon = GetComponent<Weapon>();

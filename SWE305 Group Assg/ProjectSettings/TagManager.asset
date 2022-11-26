@@ -14,6 +14,9 @@ TagManager:
   - Portal 3
   - Bullet2
   - Bullet3
+  - Spawn
+  - Reticle
+  - Weapon
   layers:
   - Default
   - TransparentFX
