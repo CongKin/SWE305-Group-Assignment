@@ -9,6 +9,11 @@ TagManager:
   - Bullet
   - Bullet1
   - Enemy
+  - Portal 1
+  - Portal 2
+  - Portal 3
+  - Bullet2
+  - Bullet3
   layers:
   - Default
   - TransparentFX
@@ -61,15 +66,15 @@ TagManager:
   - name: Collectable
     uniqueID: 233367389
     locked: 0
+  - name: top
+    uniqueID: 564256331
+    locked: 0
   - name: player
     uniqueID: 2913216079
-    locked: 0
-  - name: Projectile
-    uniqueID: 2622997855
     locked: 0
   - name: Weapon
     uniqueID: 1532358597
     locked: 0
-  - name: top
-    uniqueID: 564256331
+  - name: Projectile
+    uniqueID: 2622997855
     locked: 0
