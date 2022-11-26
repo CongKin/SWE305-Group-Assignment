@@ -23,10 +23,6 @@ public class MoveRightLeft : MonoBehaviour
 
         pos.x -= moveSpeed * Time.fixedDeltaTime;
 
-        if (pos.x < -9)
-        {
-            Destroy(gameObject);
-        }
         transform.position = pos;
     }
 }

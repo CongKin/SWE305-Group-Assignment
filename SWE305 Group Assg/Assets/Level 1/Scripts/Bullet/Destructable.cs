@@ -5,17 +5,23 @@ using UnityEngine;
 
 public class Destructable : MonoBehaviour
 {
+
+    public GameObject explosion;
     bool canBeDestroyed = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Level.instance.AddDestructable();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.x < -9)
+        {
+            DestroyDestructable();
+        }
         if (transform.position.x < 8f)
         {
             canBeDestroyed = true;
@@ -31,8 +37,18 @@ public class Destructable : MonoBehaviour
         Bullet bullet = collision.GetComponent<Bullet>();
         if (bullet != null)
         {
-            Destroy(gameObject);
+            Level.instance.RemoveDestructable();
+            DestroyDestructable();
             Destroy(bullet.gameObject);
         }
     }
+
+    void DestroyDestructable()
+    {
+        Instantiate(explosion, transform.position, Quaternion.identity);
+
+        Level.instance.RemoveDestructable();
+        Destroy(gameObject);
+    }
+
 }

@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Spaceship : MonoBehaviour
 {
-
+    Vector2 initialPosition;
     Gun[] guns;
+
+    int hits = 1;
+
     float moveSpeed = 5;
     bool moveUp;
     bool moveDown;
@@ -14,6 +17,10 @@ public class Spaceship : MonoBehaviour
 
     bool shoot;
     
+    private void Awake()
+    {
+        initialPosition = transform.position;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -95,12 +102,28 @@ public class Spaceship : MonoBehaviour
         transform.position = pos;
     }
 
+    void Hit(GameObject gameObjectHit)
+    {
+        hits--;
+        if(hits == 0)
+        {
+            ResetShip();
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Destructable destructable = collision.GetComponent<Destructable>();
         if (destructable != null)
         {
-            Destroy(gameObject);
+            Hit(gameObject);
         }
+    }
+
+    void ResetShip()
+    {
+        transform.position = initialPosition;
+        hits = 1;
+        Level.instance.ResetLevel();
     }
 }

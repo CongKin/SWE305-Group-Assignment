@@ -7,14 +7,13 @@ using UnityEngine.SceneManagement;
 public class Interact : MonoBehaviour
 {
     public bool isInRange;
-    public bool isOpen;
+    public static bool isOpen;
     private bool enterAllowed;
-    private string sceneToLoad;
+    public string sceneToLoad;
     public KeyCode interactKey;
     public KeyCode interactKey2;
     public UnityEvent openDoor;
     public UnityEvent closeDoor;
-    
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +33,7 @@ public class Interact : MonoBehaviour
                 sceneToLoad = "EndScreen";
             }
             if (isOpen && enterAllowed && Input.GetKeyDown(interactKey2))
-            {
+            {   
                 SceneManager.LoadScene(sceneToLoad);
             }
         }
@@ -54,7 +53,11 @@ public class Interact : MonoBehaviour
         {
             isInRange = true;
             Debug.Log("Player now in range");
-            enterAllowed = true;
+            if (EnemyManager.getEnemyCount() <= 0)
+            {
+                Debug.Log("Enter allowed");
+                enterAllowed = true;
+            }
         }
     }
 
@@ -67,4 +70,5 @@ public class Interact : MonoBehaviour
             enterAllowed = false;
         }
     }
+
 }
