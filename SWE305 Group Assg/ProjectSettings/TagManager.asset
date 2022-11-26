@@ -78,3 +78,6 @@ TagManager:
   - name: Projectile
     uniqueID: 2622997855
     locked: 0
+  - name: Reticle
+    uniqueID: 2824968579
+    locked: 0
