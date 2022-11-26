@@ -12,7 +12,7 @@ public class CWeapon : Collectables
  {
  if (character != null)
  {
- character.GetComponent<CharacterWeapon>().CurrentWeapon = WeaponToEquip;
+ character.GetComponent<CharacterWeapon>().EquipWeapon(WeaponToEquip);
  }
  }
 }
