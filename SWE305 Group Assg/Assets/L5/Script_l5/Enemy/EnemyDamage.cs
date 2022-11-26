@@ -27,11 +27,7 @@ public class EnemyDamage : MonoBehaviour
             StartCoroutine (WaitForSeconds());
             playerHealth.TakeDamage(damage);
         }   
-    }
 
-    private void OnTriggerEnter2D (Collider2D collision)
-    {
-        
         if(collision.gameObject.tag == "Bullet1")
         {
             enemyHealth.TakeDamage(damage);
@@ -52,7 +48,6 @@ public class EnemyDamage : MonoBehaviour
     }
 
 
-    
     IEnumerator WaitForSeconds()
     {
         Debug.Log("waited");
