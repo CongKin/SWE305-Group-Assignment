@@ -11,6 +11,7 @@ public class EnemyDamage : MonoBehaviour
     public EnemyController enemyHealth;
     bool canTakeDamage = true; 
     private Animator animator;
+    public ReturnToPool resetProjectile;
 
     void Start()
     {
@@ -25,15 +26,29 @@ public class EnemyDamage : MonoBehaviour
             animator.Play("Base Layer.enemy_attack", 0, 1f);
             StartCoroutine (WaitForSeconds());
             playerHealth.TakeDamage(damage);
-        }
-
-        if(collision.gameObject.tag == "Bullet")
-        {
-            enemyHealth.TakeDamage(damage);
-        }
-
+        }   
     }
 
+    private void OnTriggerEnter2D (Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Bullet1")
+        {
+            enemyHealth.TakeDamage(damage);
+            resetProjectile.Return();
+        }
+        
+        if(collision.gameObject.tag == "Bullet2")
+        {
+            enemyHealth.TakeDamage(damage);
+            resetProjectile.Return();
+        }
+
+        if(collision.gameObject.tag == "Bullet3")
+        {
+            enemyHealth.TakeDamage(damage);
+            resetProjectile.Return();
+        }
+    }
     
     IEnumerator WaitForSeconds()
     {

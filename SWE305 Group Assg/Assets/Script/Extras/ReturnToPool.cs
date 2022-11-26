@@ -17,7 +17,7 @@ public class ReturnToPool : MonoBehaviour
     }
 
     // Returns this object to the pool
-    private void Return()
+    public void Return()
     {
         if (projectile != null)
         {
