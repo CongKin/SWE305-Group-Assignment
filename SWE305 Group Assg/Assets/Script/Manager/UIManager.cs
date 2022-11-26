@@ -17,6 +17,7 @@ public class UIManager : Singleton<UIManager>
 
     [Header("Weapon")]
     [SerializeField] private TextMeshProUGUI currentAmmoTMP;
+    [SerializeField] private Image weaponImage;
 
     private float playerCurrentHealth;
     private float playerMaxHealth;
@@ -43,6 +44,13 @@ public class UIManager : Singleton<UIManager>
         isPlayer = isThisMyPlayer;  
 	}
 
+    public void UpdateWeaponSprite(Sprite weaponSprite)
+ {
+ weaponImage.sprite = weaponSprite;
+ weaponImage.SetNativeSize();
+ }
+
+
     public void UpdateEnemyHealth(float currentHealth, float maxHealth)
     { 
         enemyCurrentHealth = currentHealth;
@@ -65,10 +73,13 @@ public class UIManager : Singleton<UIManager>
             shieldBar.fillAmount = Mathf.Lerp(shieldBar.fillAmount, playerCurrentShield / playerMaxShield, 10f * Time.deltaTime);
             currentShieldTMP.text = playerCurrentShield.ToString() + "/" + playerMaxShield.ToString();
         } 
+
+        // Update Ammo
+        currentAmmoTMP.text = playerCurrentAmmo.ToString() + " / " + playerMaxAmmo.ToString();   
+
         enemyHealthBar.fillAmount = Mathf.Lerp(enemyHealthBar.fillAmount, enemyCurrentHealth / enemyMaxHealth, 10f * Time.deltaTime);
         currentEnemyHealthTMP.text = enemyCurrentHealth.ToString() + "/" + enemyMaxHealth.ToString();
 
-        // Update Ammo
-        currentAmmoTMP.text = playerCurrentAmmo + " / " + playerMaxAmmo;       
+            
     }
 }
