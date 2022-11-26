@@ -31,7 +31,6 @@ public class Interact : MonoBehaviour
             {
                 openDoor.Invoke();
                 isOpen = true;
-                sceneToLoad = "EndScreen";
             }
 
             if (isOpen && Input.GetKeyDown(interactKey2))

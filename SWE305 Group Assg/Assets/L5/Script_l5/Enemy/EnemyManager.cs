@@ -84,8 +84,12 @@ public class EnemyManager : MonoBehaviour
 
     public static int getEnemyCount ()
     {
-        int c;
-        c = inst.enemies.Count;
+        int c =0;
+        if (inst.enemies.Count>0)
+        {
+            c = inst.enemies.Count;
+        }
+        
         return c;
     }
 }
