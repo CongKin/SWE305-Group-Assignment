@@ -84,11 +84,6 @@ public class CharacterWeapon : CharacterComponents
 
     public void EquipWeapon(Weapon weapon)
     {
-        CurrentWeapon = Instantiate(weapon, weaponHolderPosition.position, weaponHolderPosition.rotation);
-        CurrentWeapon.transform.parent = weaponHolderPosition;
-        CurrentWeapon.SetOwner(character);     
-        WeaponAim = CurrentWeapon.GetComponent<WeaponAim>(); 
-
         if (CurrentWeapon != null)
         {
             WeaponAim.DestroyReticle(); // Each weapon has its own Reticle component
@@ -96,6 +91,10 @@ public class CharacterWeapon : CharacterComponents
             Destroy(CurrentWeapon.gameObject);
         }
 
+        CurrentWeapon = Instantiate(weapon, weaponHolderPosition.position, weaponHolderPosition.rotation);
+        CurrentWeapon.transform.parent = weaponHolderPosition;
+        CurrentWeapon.SetOwner(character);     
+        WeaponAim = CurrentWeapon.GetComponent<WeaponAim>(); 
 
         if (character.CharacterType == Character.CharacterTypes.Player)
         {
