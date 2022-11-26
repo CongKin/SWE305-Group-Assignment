@@ -20,8 +20,12 @@ public class Health : MonoBehaviour
     private CharacterController controller;
     private Collider2D collider2D;
     private SpriteRenderer spriteRenderer;
+    private CharacterWeapon characterWeapon;
 
+    private bool isPlayer;
     private bool shieldBroken;
+
+    public float MaxHealth { get;}
 
     // Controls the current health of the object    
     public float CurrentHealth { get; set; }
@@ -38,7 +42,14 @@ public class Health : MonoBehaviour
 
         CurrentHealth = initialHealth;
         CurrentShield = initialShield;
-        UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentShield, maxShield);        
+
+        if (character != null)
+        {
+            isPlayer = character.CharacterType == Character.CharacterTypes.Player;
+        }
+
+        UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentShield, maxShield, isPlayer);        
+
     }
 
     private void Update()
@@ -50,7 +61,7 @@ public class Health : MonoBehaviour
     }
 
     // Take the amount of damage we pass in parameters
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         if (CurrentHealth <= 0)
         {
@@ -59,18 +70,31 @@ public class Health : MonoBehaviour
 
         if (!shieldBroken && character != null)
         {
-            CurrentShield -= damage;
-            UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentShield, maxShield);
+            if (CurrentShield>=damage)
+            {
+                CurrentShield -= damage;
+            }
+            else
+            {
+                CurrentShield = 0;
+            }
+
+            UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentShield, maxShield, isPlayer);
 
             if (CurrentShield <= 0)
             {
                 shieldBroken = true;
+                damage -= CurrentShield;
             }
-            return;
+
+            if(!shieldBroken)
+            {
+                return;
+            }
         }
         
         CurrentHealth -= damage;
-        UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentShield, maxShield);
+        UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentShield, maxShield, isPlayer);
 
         if (CurrentHealth <= 0)
         {
@@ -88,6 +112,8 @@ public class Health : MonoBehaviour
 
             character.enabled = false;
             controller.enabled = false;
+
+            //characterWeapon.enabled = false;
         }
 
         if (destroyObject)
@@ -106,6 +132,8 @@ public class Health : MonoBehaviour
 
             character.enabled = true;
             controller.enabled = true;
+
+            //characterWeapon.enabled = true;
         }
 
         gameObject.SetActive(true);
@@ -115,7 +143,7 @@ public class Health : MonoBehaviour
 
         shieldBroken = false;
 
-        UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentShield, maxShield);
+        UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentShield, maxShield, isPlayer);
 	}
 
     // If destroyObject is selected, we destroy this game object

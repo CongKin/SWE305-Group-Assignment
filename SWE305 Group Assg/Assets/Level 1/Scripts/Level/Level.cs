@@ -10,7 +10,7 @@ public class Level : MonoBehaviour
 
     uint numDestructables = 0;
     bool startNextLevel = false;
-    float nextLevelTimer = 7;
+    float nextLevelTimer = 10;
 
     private string sceneToLoad;
 
@@ -32,7 +32,7 @@ public class Level : MonoBehaviour
         {
             if (nextLevelTimer<=0)
             {
-                sceneToLoad = "Level 3";
+                sceneToLoad = "Level 2";
                 SceneManager.LoadScene(sceneToLoad); 
             }
             else

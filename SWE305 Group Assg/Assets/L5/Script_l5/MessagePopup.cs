@@ -6,8 +6,7 @@ public class MessagePopup : MonoBehaviour
 {
     public GameObject Message;
     public GameObject Message2;
-    public KeyCode key;
-
+    
     void Update ()
     {
         if(Interact.isOpen)

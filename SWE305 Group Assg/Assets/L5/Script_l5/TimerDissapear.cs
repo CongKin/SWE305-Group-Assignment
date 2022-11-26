@@ -21,11 +21,11 @@ public class TimerDissapear : MonoBehaviour
         if (currentTime >= timeToDissapear)
         {
             currentTime = 0;
-            ToggleObject();
+            HideObject();
         }
     }
 
-    void ToggleObject ()
+    void HideObject ()
     {
         enabled = false;
         gameObject.SetActive(false);
