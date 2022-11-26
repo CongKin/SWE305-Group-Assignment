@@ -96,6 +96,7 @@ public class Health : MonoBehaviour
 
         if (CurrentHealth <= 0)
         {
+            CurrentHealth = 0;
             Die();
         }
     }

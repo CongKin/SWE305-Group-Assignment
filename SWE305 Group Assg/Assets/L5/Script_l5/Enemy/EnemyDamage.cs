@@ -11,7 +11,7 @@ public class EnemyDamage : MonoBehaviour
     public EnemyController enemyHealth;
     bool canTakeDamage = true; 
     private Animator animator;
-    public ReturnToPool resetProjectile;
+    public ReturnToPool returnToPool;
 
     void Start()
     {
@@ -35,19 +35,19 @@ public class EnemyDamage : MonoBehaviour
         if(collision.gameObject.tag == "Bullet1")
         {
             enemyHealth.TakeDamage(damage);
-            resetProjectile.Return();
+            returnToPool.Return();
         }
         
         if(collision.gameObject.tag == "Bullet2")
         {
             enemyHealth.TakeDamage(damage);
-            resetProjectile.Return();
+            returnToPool.Return();
         }
 
         if(collision.gameObject.tag == "Bullet3")
         {
             enemyHealth.TakeDamage(damage);
-            resetProjectile.Return();
+            returnToPool.Return();
         }
     }
 

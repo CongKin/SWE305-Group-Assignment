@@ -27,6 +27,7 @@ public class EnemyController : MonoBehaviour
 
         if (health <= 0)
         {
+            health = 0;
             Destroy(gameObject, 2);
             EnemyManager.HandleEnemyDefeated(gameObject.GetInstanceID(), this);
         }
