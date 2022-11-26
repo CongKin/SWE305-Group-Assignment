@@ -49,7 +49,7 @@ public class Health : MonoBehaviour
             isPlayer = character.CharacterType == Character.CharacterTypes.Player;
         }
 
-        UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentShield, maxShield, isPlayer);        
+        UpdateCharacterHealth();        
 
     }
 
@@ -77,7 +77,8 @@ public class Health : MonoBehaviour
                 CurrentShield = 0;
             }
 
-            UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentShield, maxShield, isPlayer);
+            UpdateCharacterHealth();
+
 
             if (CurrentShield <= 0)
             {
@@ -92,7 +93,8 @@ public class Health : MonoBehaviour
         }
         
         CurrentHealth -= damage;
-        UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentShield, maxShield, isPlayer);
+        UpdateCharacterHealth();
+
 
         if (CurrentHealth <= 0)
         {
@@ -120,6 +122,30 @@ public class Health : MonoBehaviour
         }
     }
     
+    public void GainHealth(int amount)
+    {
+        CurrentHealth = Mathf.Min(CurrentHealth + amount, maxHealth); //Logic if full HP, cannot add anymore
+        UpdateCharacterHealth();
+    }
+
+    public void GainShield(int amount)
+    {
+        CurrentShield = Mathf.Min(CurrentShield + amount, maxShield); //Logic if full HP, cannot add anymore
+        UpdateCharacterHealth();
+    }
+
+    public void AddMaxHealth(int amount)
+    {
+        maxHealth += amount;
+        UpdateCharacterHealth();
+    }
+
+    public void AddMaxShield(int amount)
+    {
+        maxShield += amount;
+        UpdateCharacterHealth();
+    }
+
     // Revive this game object    
     public void Revive()
     {
@@ -141,7 +167,8 @@ public class Health : MonoBehaviour
 
         shieldBroken = false;
 
-        UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentShield, maxShield, isPlayer);
+        UpdateCharacterHealth();
+
 	}
 
     // If destroyObject is selected, we destroy this game object
@@ -150,4 +177,13 @@ public class Health : MonoBehaviour
         gameObject.SetActive(false);
 
     }    
+
+    private void UpdateCharacterHealth()
+ {
+ // Update Player health
+ if (character != null)
+ {
+ UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentShield, maxShield, isPlayer);
+ }
+ } 
 }
