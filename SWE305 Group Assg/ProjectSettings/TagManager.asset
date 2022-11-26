@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Portal
+  - Key
+  - Bullet
+  - Bullet1
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -40,4 +45,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: floor
+    uniqueID: 1302251965
+    locked: 0
+  - name: door
+    uniqueID: 1278005249
+    locked: 0
+  - name: wall
+    uniqueID: 1791826191
+    locked: 0
+  - name: top
+    uniqueID: 564256331
+    locked: 0
+  - name: player
+    uniqueID: 2913216079
     locked: 0

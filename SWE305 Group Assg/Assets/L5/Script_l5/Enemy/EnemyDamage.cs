@@ -31,6 +31,7 @@ public class EnemyDamage : MonoBehaviour
 
     private void OnTriggerEnter2D (Collider2D collision)
     {
+        
         if(collision.gameObject.tag == "Bullet1")
         {
             enemyHealth.TakeDamage(damage);
@@ -50,7 +51,7 @@ public class EnemyDamage : MonoBehaviour
         }
     }
 
-    
+
     
     IEnumerator WaitForSeconds()
     {
