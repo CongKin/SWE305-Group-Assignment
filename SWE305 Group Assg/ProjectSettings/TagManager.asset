@@ -18,8 +18,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Wall
+  - Level Component
   - 
   - 
   - 
@@ -55,9 +55,18 @@ TagManager:
   - name: wall
     uniqueID: 1791826191
     locked: 0
-  - name: top
-    uniqueID: 564256331
+  - name: Level Components
+    uniqueID: 2219441625
     locked: 0
   - name: player
     uniqueID: 2913216079
+    locked: 0
+  - name: Projectile
+    uniqueID: 2622997855
+    locked: 0
+  - name: Weapon
+    uniqueID: 1532358597
+    locked: 0
+  - name: top
+    uniqueID: 564256331
     locked: 0
