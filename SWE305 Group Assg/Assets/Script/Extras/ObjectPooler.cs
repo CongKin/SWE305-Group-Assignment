@@ -14,6 +14,7 @@ public class ObjectPooler : MonoBehaviour
     private void Start()
     {
         parentObject = new GameObject("Pool");
+        GameObject.DontDestroyOnLoad(parentObject);
         Refill();
 	}
     
