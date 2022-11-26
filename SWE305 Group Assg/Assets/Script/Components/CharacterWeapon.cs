@@ -20,7 +20,7 @@ public class CharacterWeapon : CharacterComponents
     protected override void Start()
     {
         base.Start();
-        EquipWeapon(weaponToUse, weaponHolderPosition);
+        EquipWeapon(weaponToUse);
     }
 
     protected override void HandleInput()
@@ -82,16 +82,26 @@ public class CharacterWeapon : CharacterComponents
 
     }
 
-    public void EquipWeapon(Weapon weapon, Transform weaponPosition)
+    public void EquipWeapon(Weapon weapon)
     {
-        CurrentWeapon = Instantiate(weapon, weaponPosition.position, weaponPosition.rotation);
-        CurrentWeapon.transform.parent = weaponPosition;
+        if (CurrentWeapon != null)
+        {
+            WeaponAim.DestroyReticle(); // Each weapon has its own Reticle component
+            Destroy(GameObject.Find("Pool"));
+            Destroy(CurrentWeapon.gameObject);
+        }
+
+        weaponToUse = weapon;
+
+        CurrentWeapon = Instantiate(weaponToUse, weaponHolderPosition.position, weaponHolderPosition.rotation);
+        CurrentWeapon.transform.parent = weaponHolderPosition;
         CurrentWeapon.SetOwner(character);     
         WeaponAim = CurrentWeapon.GetComponent<WeaponAim>(); 
 
         if (character.CharacterType == Character.CharacterTypes.Player)
         {
             UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.MagazineSize);
+            UIManager.Instance.UpdateWeaponSprite(CurrentWeapon.gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite);
         }
     }
 }

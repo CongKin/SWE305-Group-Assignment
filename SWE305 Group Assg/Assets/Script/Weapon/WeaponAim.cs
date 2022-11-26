@@ -25,7 +25,7 @@ public class WeaponAim : MonoBehaviour
     private Quaternion initialRotation;
     private Quaternion lookRotation;
 
-    private void Start()
+    public void Start()
     {
         Cursor.visible = false; 
         weapon = GetComponent<Weapon>();
@@ -100,4 +100,10 @@ public class WeaponAim : MonoBehaviour
         reticle.transform.rotation = Quaternion.identity; //set the normal rotation
         reticle.transform.position = reticlePosition;
     }
+
+    public void DestroyReticle()
+ {
+ Destroy(reticle.gameObject);
+ }
+
 }
