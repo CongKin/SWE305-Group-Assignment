@@ -12017,7 +12017,7 @@ PrefabInstance:
     - target: {fileID: 6981789467608431577, guid: 695d3bb58017b5247abdf44393e615ec, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 1e9166a6dd1cc374f9318933aa62c509, type: 3}
+      objectReference: {fileID: 1215333841, guid: fb5078f7002087b4aa2c4ac882b7b161, type: 3}
     - target: {fileID: 6981789467608431577, guid: 695d3bb58017b5247abdf44393e615ec, type: 3}
       propertyPath: m_SortingLayer
       value: 2
