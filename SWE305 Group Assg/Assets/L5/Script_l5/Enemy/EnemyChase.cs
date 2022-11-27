@@ -16,6 +16,7 @@ public class EnemyChase : MonoBehaviour
     void Start()
     {
         rigidBody2D = GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player");
         
     }
 
