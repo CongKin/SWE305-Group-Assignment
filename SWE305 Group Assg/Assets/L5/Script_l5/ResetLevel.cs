@@ -11,6 +11,13 @@ public class ResetLevel : MonoBehaviour
     public Health playerHealth;
     public KeyCode reset;
 
+    void Start()
+    {
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
+        gameOverText = GameObject.FindGameObjectWithTag("GameOver");
+    }
+
+
     void Update()
     {
         if(playerHealth.CurrentHealth <= 0)

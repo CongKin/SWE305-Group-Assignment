@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Transform spawnPosition;
     [SerializeField] private bool canMove = true;
     [SerializeField] private bool playerCamera = true;
+    [SerializeField] private bool canRevive = true;
 
     private Character playableCharacter;
     private AudioSource soundEffect;
@@ -27,7 +28,7 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (canRevive &&Input.GetKeyDown(KeyCode.P))
         {
             ReviveCharacter();
         }

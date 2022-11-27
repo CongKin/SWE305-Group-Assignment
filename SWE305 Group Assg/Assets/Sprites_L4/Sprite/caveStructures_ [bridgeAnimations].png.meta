@@ -3823,7 +3823,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      caveStructures_ [bridgeAnimations]_43: 251919006
+      caveStructures_ [bridgeAnimations]_68: 1247686914
       caveStructures_ [bridgeAnimations]_55: -1081184132
       caveStructures_ [bridgeAnimations]_125: -1541888036
       caveStructures_ [bridgeAnimations]_154: 440239140
@@ -3848,8 +3848,8 @@ TextureImporter:
       caveStructures_ [bridgeAnimations]_167: -1968341976
       caveStructures_ [bridgeAnimations]_9: -65917343
       caveStructures_ [bridgeAnimations]_132: 740547698
-      caveStructures_ [bridgeAnimations]_47: 569426261
       caveStructures_ [bridgeAnimations]_141: 334340826
+      caveStructures_ [bridgeAnimations]_47: 569426261
       caveStructures_ [bridgeAnimations]_129: -1144081627
       caveStructures_ [bridgeAnimations]_124: -762444623
       caveStructures_ [bridgeAnimations]_22: -1506705333
@@ -3975,29 +3975,29 @@ TextureImporter:
       caveStructures_ [bridgeAnimations]_25: 1373268585
       caveStructures_ [bridgeAnimations]_160: 2145334018
       caveStructures_ [bridgeAnimations]_99: -1865621494
-      caveStructures_ [bridgeAnimations]_101: -1970240572
+      caveStructures_ [bridgeAnimations]_29: -2054838866
       caveStructures_ [bridgeAnimations]_21: -1305699870
       caveStructures_ [bridgeAnimations]_98: 362764961
       caveStructures_ [bridgeAnimations]_136: 872879670
       caveStructures_ [bridgeAnimations]_76: -2052959336
-      caveStructures_ [bridgeAnimations]_29: -2054838866
+      caveStructures_ [bridgeAnimations]_38: 1585595008
       caveStructures_ [bridgeAnimations]_3: 692199028
       caveStructures_ [bridgeAnimations]_137: -164392739
       caveStructures_ [bridgeAnimations]_173: -1451976512
-      caveStructures_ [bridgeAnimations]_172: -1790415661
       caveStructures_ [bridgeAnimations]_112: -421293678
-      caveStructures_ [bridgeAnimations]_38: 1585595008
+      caveStructures_ [bridgeAnimations]_156: -1110901346
+      caveStructures_ [bridgeAnimations]_101: -1970240572
       caveStructures_ [bridgeAnimations]_71: 42505834
       caveStructures_ [bridgeAnimations]_143: -1039664610
-      caveStructures_ [bridgeAnimations]_156: -1110901346
+      caveStructures_ [bridgeAnimations]_172: -1790415661
       caveStructures_ [bridgeAnimations]_56: 341178366
       caveStructures_ [bridgeAnimations]_157: 1590701941
       caveStructures_ [bridgeAnimations]_26: 553097249
       caveStructures_ [bridgeAnimations]_123: -1336412838
       caveStructures_ [bridgeAnimations]_130: 517368979
       caveStructures_ [bridgeAnimations]_102: 1948346285
-      caveStructures_ [bridgeAnimations]_68: 1247686914
       caveStructures_ [bridgeAnimations]_42: 2062049145
+      caveStructures_ [bridgeAnimations]_43: 251919006
       caveStructures_ [bridgeAnimations]_148: -1527232970
   spritePackingTag: 
   pSDRemoveMatte: 0

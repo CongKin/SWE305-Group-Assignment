@@ -13,7 +13,7 @@ public class FireDamage : MonoBehaviour
 
     void Start()
     {
-
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
     }
 
     private void OnTriggerEnter2D (Collider2D collision)

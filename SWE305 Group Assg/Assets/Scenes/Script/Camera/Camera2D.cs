@@ -21,6 +21,16 @@ public class Camera2D : MonoBehaviour
     [Header("Mode")]
     [SerializeField] private CameraMode cameraMode = CameraMode.Update;
 
+    [SerializeField] private bool followPlayer = true;
+
+    private void Start()
+    {
+        if (followPlayer)
+        {
+            targetTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        }
+    }
+
     private void Update()
     {
         if(cameraMode == CameraMode.Update)

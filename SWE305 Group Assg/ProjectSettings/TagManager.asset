@@ -17,6 +17,7 @@ TagManager:
   - Weapon
   - Spawn
   - KeySound
+  - GameOver
   layers:
   - Default
   - TransparentFX

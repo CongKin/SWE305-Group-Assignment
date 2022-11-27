@@ -40,6 +40,7 @@ public class Interact : MonoBehaviour
                 {
                     Debug.Log("Change Scene");
                     SceneManager.LoadScene(sceneToLoad);
+                    isOpen = false;
                 }
                 else
                 {
