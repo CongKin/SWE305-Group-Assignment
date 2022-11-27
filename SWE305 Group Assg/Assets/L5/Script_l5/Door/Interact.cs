@@ -29,6 +29,7 @@ public class Interact : MonoBehaviour
         {
             if(Input.GetKeyDown(interactKey)) //Player presses key
             {
+                Debug.Log("Door open");
                 openDoor.Invoke();
                 isOpen = true;
             }
@@ -37,10 +38,15 @@ public class Interact : MonoBehaviour
             {   
                 if (enterAllowed)
                 {
+                    Debug.Log("Change Scene");
                     SceneManager.LoadScene(sceneToLoad);
                 }
                 else
+                {
+                    Debug.Log("Change Scene fail");
                     tips.SetActive(true);
+                }
+                    
             }
         }
         else
@@ -57,6 +63,7 @@ public class Interact : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
+            //int key = collision.gameObject.GetComponent<ItemCollector>().getKeyCount();
             isInRange = true;
             Debug.Log("Player now in range");
             if (EnemyManager.getEnemyCount() <= 0)

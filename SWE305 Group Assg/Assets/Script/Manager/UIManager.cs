@@ -12,12 +12,17 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Image shieldBar;
     [SerializeField] private TextMeshProUGUI currentHealthTMP;
 	[SerializeField] private TextMeshProUGUI currentShieldTMP;
+
+    [Header("Level 5 Enemy")]
     [SerializeField] private Image enemyHealthBar;
     [SerializeField] private TextMeshProUGUI currentEnemyHealthTMP;
 
     [Header("Weapon")]
     [SerializeField] private TextMeshProUGUI currentAmmoTMP;
     [SerializeField] private Image weaponImage;
+
+    [Header("Level 4 Key")]
+    [SerializeField] private Text keysText;
 
     private float playerCurrentHealth;
     private float playerMaxHealth;
@@ -29,6 +34,12 @@ public class UIManager : Singleton<UIManager>
 
     private int playerCurrentAmmo;
     private int playerMaxAmmo;
+
+    private void Start()
+    {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Health>().UpdateCharacterHealth();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterWeapon>().UpdateWeapon();
+    }
 
     private void Update()
     {
@@ -61,6 +72,11 @@ public class UIManager : Singleton<UIManager>
     {
         playerCurrentAmmo = currentAmmo;
         playerMaxAmmo = maxAmmo;
+    }
+
+    public void UpdateKey(int keys)
+    {
+        keysText.text = "Keys: " + keys + "/3";
     }
 
     private void InternalUpdate()

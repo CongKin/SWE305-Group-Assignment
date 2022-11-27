@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1634926097773341736}
   - component: {fileID: 4688234116019531895}
+  - component: {fileID: 918934457116588339}
   m_Layer: 0
   m_Name: Reticle
   m_TagString: Player
@@ -70,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1469998717
-  m_SortingLayer: 10
+  m_SortingLayerID: 911104025
+  m_SortingLayer: 8
   m_SortingOrder: 10
   m_Sprite: {fileID: 1280679589, guid: b03dbedadbdc8404383fec06de127b72, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -84,3 +85,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &918934457116588339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8409280038773488049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4fe9bd92ba611940b1a85f652dbc99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
