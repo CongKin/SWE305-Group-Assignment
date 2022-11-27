@@ -7,6 +7,11 @@ public class ItemCollector : MonoBehaviour
 {
     public static int keys = 3;
 
+    private void Start()
+    {
+        UIManager.Instance.UpdateKey(keys);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Key"))

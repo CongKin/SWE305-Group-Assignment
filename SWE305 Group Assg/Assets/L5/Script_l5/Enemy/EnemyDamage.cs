@@ -29,17 +29,17 @@ public class EnemyDamage : MonoBehaviour
 
         if(collision.gameObject.tag == "Bullet1")
         {
-            enemyHealth.TakeDamage(playerDamage);
+            enemyHealth.TakeDamage(2);
         }
         
         if(collision.gameObject.tag == "Bullet2")
         {
-            enemyHealth.TakeDamage(playerDamage);
+            enemyHealth.TakeDamage(5);
         }
 
         if(collision.gameObject.tag == "Bullet3")
         {
-            enemyHealth.TakeDamage(playerDamage);
+            enemyHealth.TakeDamage(10);
         }
     }
 
