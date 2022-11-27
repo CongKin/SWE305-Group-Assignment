@@ -587,7 +587,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203240805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.32, y: -15.66, z: -10.021572}
+  m_LocalPosition: {x: -26.67, y: -15.95, z: -10.021572}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30448,6 +30448,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPosition: {fileID: 203240806}
+  canMove: 1
+  playerCamera: 1
 --- !u!1 &1190834160
 GameObject:
   m_ObjectHideFlags: 0

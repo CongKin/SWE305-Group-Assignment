@@ -18,6 +18,7 @@ public class ItemCollector : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Key"))
         {
+            Debug.Log("CollectKey");
             collectionSoundEffect.Play();
             Destroy(collision.gameObject);
             keys++;
@@ -25,6 +26,11 @@ public class ItemCollector : MonoBehaviour
         }
     }
 
+    public void setSoundEffect(AudioSource soundEffect)
+    {
+        Debug.Log("UpdateSound");
+        collectionSoundEffect = soundEffect;
+    }
     public int getKeyCount()
     {
         return keys;

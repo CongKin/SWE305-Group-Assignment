@@ -16,6 +16,7 @@ TagManager:
   - Bullet2
   - Weapon
   - Spawn
+  - KeySound
   layers:
   - Default
   - TransparentFX
@@ -56,11 +57,11 @@ TagManager:
   - name: Background
     uniqueID: 1132307377
     locked: 0
-  - name: Wall
-    uniqueID: 3413128029
-    locked: 0
   - name: Floor
     uniqueID: 3701713929
+    locked: 0
+  - name: Wall
+    uniqueID: 3413128029
     locked: 0
   - name: Level Component
     uniqueID: 420214989
