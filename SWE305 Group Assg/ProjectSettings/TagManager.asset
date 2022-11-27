@@ -65,6 +65,9 @@ TagManager:
   - name: Collectable
     uniqueID: 2299658381
     locked: 0
+  - name: Top
+    uniqueID: 2967518547
+    locked: 0
   - name: Player
     uniqueID: 639101127
     locked: 0
@@ -76,7 +79,4 @@ TagManager:
     locked: 0
   - name: Reticle
     uniqueID: 911104025
-    locked: 0
-  - name: Top
-    uniqueID: 2967518547
     locked: 0

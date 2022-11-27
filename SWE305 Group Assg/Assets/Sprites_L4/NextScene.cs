@@ -14,8 +14,9 @@ public class NextScene : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(ItemCollector.keys==3){
-        SceneManager.LoadScene(nextScene);
+        if(ItemCollector.keys>=3){
+            Debug.Log("Change Scene");
+            SceneManager.LoadScene(nextScene);
         }
     }
 }
