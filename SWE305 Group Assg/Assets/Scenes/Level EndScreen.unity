@@ -1407,7 +1407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPosition: {fileID: 1208918840}
   canMove: 0
-  playerCamera: 1
+  playerCamera: 0
   canRevive: 1
 --- !u!4 &2014526477
 Transform:

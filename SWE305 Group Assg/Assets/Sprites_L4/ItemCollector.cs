@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ItemCollector : MonoBehaviour
 {
-    public static int keys = 0;
+    public static int keys = 3;
 
     [SerializeField] private AudioSource collectionSoundEffect;
 

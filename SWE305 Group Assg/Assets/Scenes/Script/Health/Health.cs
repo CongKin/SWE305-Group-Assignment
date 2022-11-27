@@ -31,7 +31,9 @@ public class Health : MonoBehaviour
 
     // Returns the current health of this character
     public float CurrentShield { get; set; }
-    
+
+    private GameObject weapon;
+
     public void Awake()
     {
         character = GetComponent<Character>();
@@ -111,6 +113,13 @@ public class Health : MonoBehaviour
 
             character.enabled = false;
             controller.enabled = false;
+
+            weapon = GameObject.FindGameObjectWithTag("Weapon");
+
+            weapon.GetComponent<Weapon>().enabled = false;
+            weapon.GetComponent<WeaponAim>().enabled = false;
+
+            //weaponHolder.SetActive(false);
         }
 
         if (destroyObject)
@@ -153,6 +162,11 @@ public class Health : MonoBehaviour
 
             character.enabled = true;
             controller.enabled = true;
+
+            weapon.GetComponent<Weapon>().enabled = true;
+            weapon.GetComponent<WeaponAim>().enabled = true;
+
+            //weaponHolder.SetActive(true);
         }
 
         gameObject.SetActive(true);

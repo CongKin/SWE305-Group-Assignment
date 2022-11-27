@@ -15,6 +15,8 @@ public class ResetLevel : MonoBehaviour
     {
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
         gameOverText = GameObject.FindGameObjectWithTag("GameOver");
+
+
     }
 
 
@@ -22,11 +24,17 @@ public class ResetLevel : MonoBehaviour
     {
         if(playerHealth.CurrentHealth <= 0)
         {
-            gameOverText.SetActive(true);
+            Debug.Log("Player die");
+            //gameOverText.SetActive(true);
+            Debug.Log("Game Over");
             if (Input.GetKeyDown(reset))
             {
-                sceneToLoad = "Final Level";
+                playerHealth.Revive();
+
+                sceneToLoad = "Level 5";
                 SceneManager.LoadScene(sceneToLoad);
+
+                
             }
         }
     }
