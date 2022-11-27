@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1712855011263117963}
   - component: {fileID: 6355740401534026865}
   m_Layer: 0
-  m_Name: floor_l5
+  m_Name: floor_l5 - Copy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
