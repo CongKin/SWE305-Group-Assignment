@@ -715,7 +715,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      defeat_9: 1178326470
+      defeat_4: -1892390562
       guard_orange_spritesheet_12: -928096268
       defeat_1: 353193365
       defeat_7: -901702725
@@ -741,7 +741,7 @@ TextureImporter:
       defeat_2: 1671420594
       defeat_8: 2097415056
       guard_orange_spritesheet_2: -1304149069
-      defeat_4: -1892390562
+      defeat_9: 1178326470
       guard_orange_spritesheet_15: 1860481074
   spritePackingTag: 
   pSDRemoveMatte: 0
